@@ -20,7 +20,7 @@ public class DefaultPointcutAdvisor implements PointcutAdvisor {
         this(Pointcut.TRUE, advice);
     }
 
-    public DefaultPointcutAdvisor(Pointcut aTrue, Advice advice) {
+    public DefaultPointcutAdvisor(Pointcut pointcut, Advice advice) {
         this.pointcut = pointcut;
         setAdvice(advice);
     }
